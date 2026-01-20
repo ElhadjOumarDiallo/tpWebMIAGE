@@ -1,33 +1,20 @@
-h1 {
-    text-align: center;
-}
-input[type="text"] {
-    border-radius: 10px;
-    padding: 5px;
-    border: 2px solid gray;
-}
-
-.p1 {
-    font-size: 20px;
-    font-family: Arial, sans-serif;
-    color: blue;
-}
-.p2 {
-    font-size: 18px;
-    font-family: 'Times New Roman', serif;
-    color: darkcyan;
-}
-
-.button1 {
+.container {
+    width: 100px;
+    height: 100px;
     background-color: red;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    border-radius: 10px;
 }
-.button1:hover {
-    cursor: pointer;
-    box-shadow: 3px 3px 5px rgb(83, 82, 82);
 
+#diff {
+    border-radius: 15px;
+    border: 7px solid green;
+    padding: 10px;
+}
+
+.maman {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightgray;
+    height: 270px;
 }
