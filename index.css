@@ -1,20 +1,246 @@
-.container {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-}
-
-#diff {
-    border-radius: 15px;
-    border: 7px solid green;
-    padding: 10px;
-}
-
-.maman {
+.navbar{
     display: flex;
-    gap: 10px;
     justify-content: space-around;
     align-items: center;
-    background-color: lightgray;
-    height: 270px;
+}
+
+.gauche{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: large;
+}
+
+p{
+    color: lightgray;
+}
+
+.gauche .cercle{
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.droite{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.droite ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.droite ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.droite ul button{
+    background-color: inherit;
+    border: 1px solid white;
+    padding: 5px 4px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.droite ul button:hover{
+    background-color: cadetblue;
+    color: white;
+    cursor: pointer;
+}
+
+.presentation{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.txtpresentation{
+    text-align: center;
+}
+
+.presentation img{
+    width: 200px;
+    height: auto;
+}
+
+
+.milieu{
+    background-color: black;
+    width: 100%;
+}
+
+.milieu ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.milieu ul li{
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.milieu ul li img{
+    width: 50%;
+    height: auto;
+    filter: brightness(0) invert(0.6);
+}
+
+.details{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+}
+
+.detailgauche img{
+    width: 95%;
+    height: auto;
+    border-radius: 0% 52% 50% 60%;
+
+}
+
+.detailgauche{
+    margin: 0 20px;
+    width: 32%;
+    height: auto;   
+}
+
+.detaildroite{
+    width: 56%;
+
+}
+
+.detaildroite p{
+    color: rgb(141, 137, 137);
+}
+
+.lignehoriz{
+    width: 95%;
+    height: 1px;
+    background-color: white;
+    margin: 40px;
+}
+
+.entreLignes{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+    padding: 0 0px;
+}
+
+.entreLignes>div{
+    width: 40%;
+}
+
+.textHelp{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.ratingHelp{
+    display: flex;
+    gap: 65px;
+}
+
+.imgBoxes{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imgBoxes img{
+    width: 20%;
+    height: 20%;
+    border-radius: 50% ;
+    margin: 5px 0;
+}
+
+.boxIconEtText{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    background-color: rgba(194, 191, 187, 0.829);
+    color: black;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+
+.boxIconEtText:hover{
+    background-color: inherit;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+}
+
+
+.fin{
+    text-align: center;
+}
+
+.fin button{
+    background-color: inherit;
+    border: 1px solid white;
+    color: white;
+    padding: 6px 25px;
+}
+
+.fin button:hover{
+    background-color: cadetblue;
+    color: lightgrey;
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 5% 0px 5%;
+}
+
+.footergauche img{
+    width: 6%;
+    height: 6%;
+    margin-right: 10px;
+    border: white 1px solid;
+    border-radius: 50%;
+}
+
+body{
+    background: linear-gradient(135deg, #984D38, #181E41);
+    background-repeat: no-repeat;
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .entreLignes{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 0 0px;
+    }
+
+    .entreLignes>div{
+        width: 90%;
+        align-items: center;
+    }
+
+    .boxIconEtText{
+        width: 90%;
+    }
 }
